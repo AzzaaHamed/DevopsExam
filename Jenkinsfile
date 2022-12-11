@@ -44,7 +44,13 @@ pipeline {
             }
          }
          
+stage('SonarQube analysis') {
 
+       steps{
+      withSonarQubeEnv('sonarserver') { 
+       
+       sh "mvn sonar:sonar"
+  }
         
   stage('Docker Build') {
 
