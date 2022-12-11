@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=tpachato
+      - MYSQL_DATABASE=examdevops
     ports:
       - "3306:3306"
     volumes:
@@ -20,7 +20,7 @@ services:
       - "8089:8080"
     environment:
       SPRING_APPLICATION_JSON: '{
-        "spring.datasource.url"  : "jdbc:mysql://mysqldb:3306/tpachato?useSSL=false",
+        "spring.datasource.url"  : "jdbc:mysql://mysqldb:3306/examdevops?useSSL=false",
         "spring.datasource.username" : "root",
         "spring.datasource.password" : "root",
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
