@@ -11,7 +11,7 @@ pipeline {
               
                 git branch: 'main', 
                 credentialsId: 'afff4581-86ff-4f91-914d-ca94076a983f', 
-                url: 'https://github.com/AzzaaHamed/Devops-Projet.git'
+                url: 'https://github.com/AzzaaHamed/DevopsExam.git'
                     
                 }
                 
