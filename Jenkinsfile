@@ -49,7 +49,7 @@ pipeline {
   stage('Docker Build') {
 
 			steps {
-				sh 'docker build -t azzahamed/tpachatproject .'
+				sh 'docker build -t azzahamed/examdevops .'
 			}
 		}
         
@@ -65,7 +65,7 @@ pipeline {
 	  stage('Docker Push') {
 
 			steps {
-				sh 'docker push azzahamed/tpachatproject'
+				sh 'docker push azzahamed/examdevops'
 			}
 		}
 	
